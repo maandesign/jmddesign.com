@@ -146,8 +146,6 @@ a{
 /* Home */
 .home .container{
     width: 90%;
-    border: 1px solid;
-    color: red;
     margin-top: 6%;
 }
 
