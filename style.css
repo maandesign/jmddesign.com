@@ -227,6 +227,10 @@ a{
         font-size: 25px;
         margin-bottom: 10%;
     }
+    
+    .about p{
+        font-size: 15px;
+    }
 }
 
 /* Complete */
