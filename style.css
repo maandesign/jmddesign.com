@@ -224,7 +224,7 @@ a{
 
 @media only screen and (max-width:768px){
     .about h1{
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 10%;
     }
     
@@ -335,7 +335,7 @@ i{
     }
 
     .services h1{
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .services .container{
@@ -513,7 +513,7 @@ i{
 
 @media only screen and (max-width:768px){
     .work h1{
-        font-size: 25px;
+        font-size: 20px;
     }
     
 
@@ -609,6 +609,10 @@ textarea{
 }
 
 @media only screen and (max-width:768px){
+    .contact-title h1{
+        font-size: 20px;
+    }
+    
     .form-control{
         width: 100%;
     }
