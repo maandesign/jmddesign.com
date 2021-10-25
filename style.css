@@ -677,3 +677,9 @@ textarea{
     color: white;
     padding: 10px;
 }
+
+@media only screen and (max-width:768px){
+    .footer-bottom p{
+        font-size: 15px;
+    }
+}
