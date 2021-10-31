@@ -543,7 +543,7 @@ i{
 
 /* Contact */
 .contact{
-    background-image: url(images/background.jpg);
+    background-image: url(images/banner.jpg);
     background-size: cover;
 }
 
@@ -579,16 +579,19 @@ i{
 .info h3{
     margin-bottom: 5px;
     font-size: 18px;
+    color: white;
 }
 
 .info p{
     margin-bottom: 30px;
     font-size: 15px;
+    color: white;
 }
 
 .info .para{
     margin: 0;
     font-size: 15px;
+    color: white;
 }
 
 .contact-form{
@@ -645,7 +648,7 @@ textarea{
     }
 
     .contact{
-        background-position: right;
+        background-position: center;
     }
 
     .contact-form{
