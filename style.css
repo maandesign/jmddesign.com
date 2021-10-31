@@ -55,8 +55,10 @@ a{
 /* Burger Menu */
 .burger{
     cursor: pointer;
-    padding-top: 20px;
-    margin-left: 88%;
+    margin-left: 80%;
+    position: absolute;
+    top: 20px;
+    right: 1.2rem;
     display: none;
 }
 
@@ -84,7 +86,6 @@ a{
 
     .logo img{
         float: left;
-        margin-right: 40px;
     }
 
     ul{
@@ -111,7 +112,6 @@ a{
 
     .burger{
         display: block;
-        padding-left: 8px;
     }
 }
 
