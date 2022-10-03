@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Remove border from toggler */
+.navbar-toggler {
+    border: 0 !important;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+}
+
+/* Lines of the Toggler */
+.toggler-icon{
+    width: 35px;
+    height: 1px;
+    background-color: white;
+    display: block;
+    transition: all 0.3s;
+}
+
+/* Adds Space between the lines */
+.middle-bar{
+    margin: 7px auto;
+}
+
+/* State when navbar is opened (START) */
+.navbar-toggler .top-bar {
+    transform: rotate(-45deg) translate(-6px,7px);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(45deg) translate(-4px,-5px);
+}
+/* State when navbar is opened (END) */
+
+/* State when navbar is collapsed (START) */
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+/* State when navbar is collapsed (END) */
+
+/* Color of Toggler when collapsed */
+.navbar-toggler.collapsed .toggler-icon {
+    background-color: white;
+}
+
+.navbar-expand-lg.navbar-nav.nav-link {
+    padding: 0;
+    margin-left: 1.5rem;
+}
+
+.navbar-toggler {
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    transition: box-shadow .15s ease-in-out;
+}
+
+.bg-dark {
+    background-color: black !important;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+@media screen and (max-width: 575px){
+    .navbar.navbar-expand-lg{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .navbar-toggler.collapsed{
+        margin-right: 12px;
+    }
+
+    .container-fluid.back-img{
+        background-position: right !important;
+    }
+
+    .navbar.navbar-expand-lg{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .container.hero-text{
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+    }
+
+    .txt{
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .container.hero-text{
+        padding-top: 65% !important;
+    }
+
+    .container.hero-text h1{
+        font-size: 50px !important;
+    }
+
+    .container.company-about p{
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    .container.company-about h1{
+        padding-left: 12px !important;
+    }
+
+    .container.company-about h2{
+        padding-left: 12px !important;
+    }
+
+    .container.company-about h3{
+        padding-left: 12px !important;
+    }
+
+    .btn.btn-ser{
+        margin-left: 12px !important;
+    }
+
+    .team-about img{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .nav-link.contxt{
+        padding-right: 0 !important;
+    }
+}
+
+/* Home Section Starts*/
+.container-fluid.back-img {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center !important;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.container.hero-text{
+    text-align: center;
+    color: white;
+}
+
+.container.hero-text h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.btn{
+    border-radius: none !important;
+    box-shadow: none !important;
+    border: 2px solid black;
+    color: black;
+    padding: 15px;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+/* Home Section Ends*/
+
+/* home services card */
+.text-center{
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.card{
+    border-radius: 0;
+}
+/* home services card */
+
+/* Brand Carousel Starts */
+.slick-slide {
+    margin: 0px 50px;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+}
+
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+/* Brand Carousel Ends */
+
+@media screen and (max-width: 575px){
+    .slider img{
+        width: 80px;
+    }
+
+    .slick-slide {
+        margin: 0px 20px;
+    }
+
+    .footer-text{
+        font-size: 12px !important;
+    }
+
+}
+
+/* Isotope Price Btn Start */
+.text-center button{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.btn-check:active+.btn-outline-dark, .btn-check:checked+.btn-outline-dark, .btn-outline-dark.active, .btn-outline-dark.dropdown-toggle.show, .btn-outline-dark:active {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+}
+
+@media screen and (max-width: 575px){
+    .mob{
+        font-size: 8px!important;
+    }
+}
+/* Isotope Btn Ends */
+
+@media only screen and (max-width: 991px){
+    .price-btn button{
+        margin-right: 0px !important;
+    }
+}
+
+/* Costom Scroll Bar */
+::-webkit-scrollbar{
+    color: black;
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: black;
+}
+/* Costom Scroll Bar */
+
+/* Dropdown */
+.dropdown-item:hover{
+    color: white;
+    background-color: black;
+}
+
+@media only screen and (max-width: 991px){
+    .dropdownContent{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .para-text{
+        font-size: 15px!important;
+    }
+}
+
+.btn2 a{
+    color: white;
+    border: 2px solid white;
+}
+
+.btn2 a:hover{
+    color: black;
+    background-color: white;
+}
